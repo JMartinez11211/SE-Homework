@@ -1,7 +1,10 @@
 
-	body{background: black;
+	 body{background: black;
 		display: inline;
-		padding: 10px;}
+		padding: 10px;
+		margin-bottom: 10%;}
+
+	
 
 
 .navbar nav{position: relative;
@@ -39,8 +42,11 @@ h3{color: white;
 p{color: white;
     text-align: left;
     margin-top: 100px; 
+    margin-bottom: 15px;
     font-size: 30px;
+    font-style: initial;
 }
+.paragraphs{margin-bottom: 30px;}
 
     #Favlist{color: aquamarine;
     	}
@@ -59,9 +65,21 @@ font-style: italic;
 
  table{color: white;
  	font-size: 25px;
-
+ 	position: relative;
+ 
  }  
+ .cooking img{position: relative;
+max-width: 25%;
+height: auto;
+ }
+
  th{font-size: 30px;}
+
+.Gmailimg img{max-width: 25%;
+height: auto;
+float:right;
+margin-right: 15%;
+}
 
 
 .ContactForm {
