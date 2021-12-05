@@ -5,8 +5,8 @@ console.log(Uinput);
 let Cinput = prompt("What word would you like to count ? :")
 let Uarray = Uinput.split(" ")
 let Wcounter =0
-for (let i = Wcounter ; i<Uarray.length; i++) {
-        if (Uarray[i].toLocaleLowerCase==Cinput.toLocaleLowerCase) {
+for (let i = 0 ; i<Uarray.length; i++) {
+        if (Uarray[i].toLocaleLowerCase()==Cinput.toLocaleLowerCase()) {
            Wcounter++
            
         } 
