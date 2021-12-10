@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="para1"></p>
+
+    <script>
+    //2.Write a program to look for the user input in an array. When it finds the first occurrence, display the value and the index of that value
+    let nArray = ["cow", "cat", "pig","dog","fox", "bat", "cat","owl", "dog","yak","emu","eel", "cow", "cat", "rat","ape"]
+    let uInputText = prompt("Enter a 3 letter animal name to see where it first occurs in the array:  ").toLocaleLowerCase()
+    let uInputValue= nArray.indexOf(uInputText)
+    if (uInputValue>=0) {
+        document.getElementById("para1").innerHTML =`The first occurance of the word ${uInputText} is at index ${uInputValue}. `
+    }
+    else{
+        document.getElementById("para1").innerHTML =`${uInputText} isn't in the array, refresh and try again please. `
+    }
+     
+     console.log(nArray);
+    </script>
+</body>
+</html>
