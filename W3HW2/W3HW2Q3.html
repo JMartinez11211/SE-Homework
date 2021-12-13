@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 3. Create an array of at least five Student objects with the following properties: name, activity, gender
+- Filter all those students who are into swimming
+- Filter all those students who are in the activity entered by the user. For example, if the user enters "Basketball" display only students with basketball as their activity  -->
+<p id="para1">this shouldnt be seen</p>
+
+
+
+<p id="para2"></p>
+
+
+<script>
+
+
+let uInput= prompt("Type an activity to see who is in it: Basketball, Martial Arts, Skating, Swimming, Chess club, Tennis, Rock climbing and Dance").toLocaleLowerCase()
+console.log(uInput);
+const studentA =[
+    {name:" Jason ", activities:["basketball","martial arts","skating"], gender:"Male" },
+    {name:" Billy ", activities:["swimming","martial arts","chess club" ], gender:"Male" },
+    {name:" Kimberly ", activities:["dance","martial arts","archery" ], gender:"Female" },
+    {name:" Zack ", activities:["basketball" ,"martial arts","dance"], gender:"Male" },
+    {name:" Trini ", activities:["swimming","martial arts","tennis" ], gender:"Female" },
+    {name:" Tommy ", activities:["basketball","martial arts","rock climbing"], gender:"Male" }
+]
+
+const turnToString =(oArray)=>{let outString=("");
+    oArray.map( elementObject => outString+= elementObject.name)
+return outString
+console.log(turnToString(studentA));
+}
+
+const aGruop = studentA.filter(a => (a.activities.includes("swimming")))
+ console.log(turnToString (aGruop));
+document.getElementById("para1").innerHTML =`The students in swimming activities are ${turnToString (aGruop)}`
+
+const inputGruop = studentA.filter(b => (b.activities.includes(uInput)))
+ console.log(turnToString (inputGruop));
+document.getElementById("para2").innerHTML =`The students in these activities are: ${turnToString (inputGruop)}`
+
+
+
+</script>
+
+</body>
+</html>

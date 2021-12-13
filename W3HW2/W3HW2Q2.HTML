@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2> Celsius to Fahrenheit</h2>
+   
+       <span> Enter degrees Celsius :</span>
+       <input type="number" id="cInput" required >
+       <button id="CtF" onclick="cToF(cInput.value)"  >submit</button>
+       <p id="para1"> </p>
+       
+  
+   <h2>  Fahrenheit to Celsius </h2>
+   
+       <span> Enter degrees Fahrenheit :</span>
+       <input type="number" id="fInput" required>
+       <button id="FtC" onclick="fToC(fInput.value)"  >submit</button>
+       <p id="para2"> </p>
+  
+<script>
+
+//  2a. Create a function called celsiusToFahrenheit:
+// - Take a Celsius temperature from the user and convert it to Fahrenheit
+// - Return string as output: "SOMETHING degrees Celsius is Something degrees Fahrenheit" 
+ cToF = (valNum) => { valNum = Number(valNum);
+ 
+  
+  document.getElementById("para1").innerHTML= `${valNum} degrees Celsius is ${(valNum * 1.8)+32} degrees Fahrenheit`;
+}
+
+
+
+//  2b. Create a function called fahrenheitToCelsius:
+// - Now take a Fahrenheit temperature from the user and convert it to Celsius
+// - Return string as output: "SOMETHING degrees Fahrenheit is SOMETHING degrees " 
+ fToC = (valNum) => {valNum = Number(valNum);
+  
+  document.getElementById("para2").innerHTML=`${valNum} degrees Fahrenheit  is ${(valNum-32)/1.8} degrees Celsius `;
+}
+</script>
+</body>
+</html>
