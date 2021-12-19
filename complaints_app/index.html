@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+<div id="hdiv">
+    <H1 id="heading">WHERE CAN WE CUASE TROUBLE TODAY?</H1>
+</div>
+
+<div id="inputButtons">
+    <span>
+    <input id="input" type="number" placeholder="# OF COMPLAINTS" value="10" >
+    <button class="boroughs" id="BROOKLYN" onclick="getCityData(`BROOKLYN`)">BROOKLYN</button>
+    <button class="boroughs" id="MANHATTAN" onclick="getCityData(`MANHATTAN`)">MANHATTAN</button>
+    <button class="boroughs" id="QUEENS" onclick="getCityData(`QUEENS`)">QUEENS</button>
+    <button class="boroughs"id="BRONX" onclick="getCityData(`BRONX`)">BRONX</button>
+    <button class="boroughs" id="STATEN ISLAND" onclick="getCityData(`STATEN ISLAND`)">STATEN ISLAND</button>
+    </span>
+</div>
+<div id="tableDiv">
+<table id="listTable">
+<!-- <tr id="resultRow"></tr> -->
+</table>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>

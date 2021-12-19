@@ -1,0 +1,52 @@
+body{
+    background-color:gainsboro ;
+}
+
+.boroughs{
+   background-color:  rgb(27, 2, 97);
+   color: ghostwhite;
+   border-radius: 8px;
+   padding: 12px 28px;
+   font: bold;
+}
+.boroughs:hover{
+    background-color: rgb(184, 166, 10);
+    color: rgb(248, 248, 245);
+}
+
+table {
+    border: 1px solid rgb(220, 220, 220); width: auto; 
+  }
+
+#resolveButton{
+    background-color:rgb(202, 37, 37) ;
+color: rgb(248, 248, 245);
+    border-radius: 8px;
+    font: bold;
+}
+#resolveButton:hover{
+    background-color: rgb(184, 166, 10);
+    color: rgb(248, 248, 245);
+}
+
+#input{
+    padding: 12px 28px;
+}
+#listOfComplains{
+    list-style:🚨	;
+    text-align: left;
+ 
+}
+
+#hdiv{
+    text-align: center;
+}
+#inputButtons{
+    text-align: center;
+}
+#listTable{
+    
+    margin-left: auto;
+    margin-right: auto;
+    justify-content:space-between ;
+}
